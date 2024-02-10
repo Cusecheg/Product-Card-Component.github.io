@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-Cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.attribution {
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--Cream);
+}
+
+
+main {
+    display: flex;
+}
+
+#barra-lateral {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: var(--White);
+    height: 350px;
+    width: 245px;
+    font-size: 18px;
+}
+
+img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 350px;
+    width: 245px;
+}
+
+#titulo {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--Dark-grayish-blue);
+    margin-top: 15px;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    line-height: 28px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+#texto {
+    font-family: "Montserra", sans-serif;
+    color: var(--Dark-grayish-blue);
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+#preços {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#preço-desconto {
+    color: var(--Dark-Cyan);
+    font-family: "Fraunces", serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#preço-real {
+    color: var(--Dark-grayish-blue);
+    font-family: "Montserra", sans-serif;
+    font-size: 12px;
+    text-decoration-line: line-through;
+}
+
+button {
+    font-family: "Montserra", sans-serif;
+    font-weight: 700;
+    width: 100%;
+    background-color: var(--Dark-Cyan);
+    color: var(--White);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 22%);
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+
+    img {
+        height: 250px;
+        width: 200px;
+    }
+
+    #barra-lateral {
+        gap: 1px;
+        height: 250px;
+        width: 200px;
+
+    }
+    #titulo {
+        font-size: 8px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    #texto {
+        font-size: 10px;
+    }
+    
+    #preço-desconto {
+        font-size: 17px;
+    }
+    
+    #preço-real {
+        font-size: 12px;
+    }
+    
+    button {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+
+
+
+}
